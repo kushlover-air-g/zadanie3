@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ConsoleApp1
 {
@@ -6,10 +6,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            double symm=1;
-            for(int i = 2; i<(Math.PI*Math.PI)/6; i++)
+            double znamenatel=2, symm = 1.0;
+            while(symm<1.644)
             {
-                symm += 1 / Math.Pow(i, 2);
+                symm += 1 / (znamenatel * znamenatel);
+                znamenatel++;
             }
             Console.WriteLine(symm);
         }
